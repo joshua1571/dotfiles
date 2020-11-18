@@ -1,0 +1,12 @@
+[user]
+    name = Joshua Hernandez
+    email = joshua1571@gmail.com
+    username = joshua1571
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = nvim
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[color]
+    ui = auto
+[github]
+    user = joshua1571
