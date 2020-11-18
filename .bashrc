@@ -1,4 +1,4 @@
-# .bashrc
+ #.bashrc
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -23,12 +23,13 @@ export EDITOR="$VISUAL"
 export LESSHISTFILE=/dev/null
 
 # Aliases
-alias vim='nvim'
+alias nvim='flatpak run io.neovim.nvim'
+alias vim='flatpak run io.neovim.nvim'
 alias brewfull="brew update; brew upgrade; brew cleanup; brew doctor"
-alias zshrc='${=EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Quick access to the .zshrc file
+alias bashrc='${=EDITOR} ${$HOME}/.bashrc' 
 alias grep='grep --color'
 alias wget='wget --hsts-file=~/.config/wget-hsts'
-alias zu='source ~/.zshrc'
+alias bu='source ~/.bashrc'
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 alias l='ls -lFh'     #size,show type,human readable
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
@@ -39,6 +40,3 @@ alias ldot='ls -ld .*'
 alias lS='ls -1FSsh'
 alias lart='ls -1Fcart'
 alias lrt='ls -1Fcrt'
-
-
-`
